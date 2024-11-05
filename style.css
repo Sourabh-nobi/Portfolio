@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* header Section */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+}
+
+.logo{
+    font-size: 2vw;
+    color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.nav-list ul{
+    display: flex;
+    list-style: none;
+}
+
+li{
+    margin-left: 20px;
+    font-size: 1vw;
+}
+
+a{
+    color: rgb(0, 0, 0);
+}
+
+/* Hero Section */
+.hero-text{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw;
+    background-position: -20% -50%;
+    background-attachment: fixed;
+    object-fit: cover;
+    background-color: black;
+    color: white;
+}
+
+.hero h1 , h2{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    line-height: 1;
+    font-size: 4vw;
+}
+
+
+.hero p{
+    font-size: 2vw;
+    margin-top: 2vw;
+    font-family: "Open Sans", sans-serif;
+    padding:0vw 5vw;
+
+}
+
+
+/* Project Section */
+.pro-head{
+    text-align: center;
+    margin: 2vw;
+    font-size: 2vw;
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.pro-grid{
+    margin: 1vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.grid{
+    margin-left: 2vw;
+    padding: 1vw;
+    object-fit: cover;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    transition: 0.5s ease-in-out;
+}
+.grid:hover{
+    transition: 0.5s ease-in-out;
+    box-shadow: 2.5px 5px 10px 0.58px;
+}
+.grid img {
+    width: 300px;
+}
+.grid a{
+    text-decoration: none;
+}
+.grid h4{
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer{
+    padding: 20px;
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: 20px;
+}
+
+@media (max-width:786px) {
+    .navbar{
+        margin: 10px;
+    }
+    .nav-list li a{
+        font-size: 3vw;
+    }
+    .logo{
+        font-size: 5vw;
+
+    }
+    .hero-text h1, h2{
+        font-size: 4vw;
+        
+    }
+    .hero-text p {
+        font-size: 3vw;
+        margin-top: 1vw;
+        padding: 0;
+        margin: 2vw 0px;
+    }
+    .pro-head h3{
+        font-size: 5vw;
+    }
+}
+
+@media (max-width:1024px) {
+    .logo{
+        font-size: 5vw;
+    }
+    
+    .nav-list a{
+        font-size: 2.5vw;
+    }
+}
